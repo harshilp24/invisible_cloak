@@ -17,7 +17,7 @@ background = 0
 ## Capture the background in range of 60
 for i in range(60):
     ret, background = cap.read()
-background = np.flip(background, axis=1)
+background = np.flip(background)
 
 ## Read every frame from the webcam, until the camera is open
 while (cap.isOpened()):
